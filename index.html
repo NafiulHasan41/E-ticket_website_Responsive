@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket</title>
+
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="scripts/script.css">
+
+</head>
+
+<body>
+    <header >
+        <section class="navbar w-[95%] md:w-[81%] mx-auto font-raleway ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 drop-shadow-xl font-raleway ">
+                            <li><a class="drop-shadow-xl">Home</a></li>
+                            <li><a class="drop-shadow-xl">About</a></li>
+                            <li><a class="drop-shadow-xl">Destination</a></li>
+                            <li><a class="drop-shadow-xl">Search</a></li>
+                        </ul>
+                    </div>
+                    <a class=" font-medium md:font-extrabold text-xl md:text-2xl text-black drop-shadow-xl "> <span
+                            class="drop-shadow-2xl font-raleway">E-Ticket</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex font-raleway">
+                    <ul class="menu menu-horizontal px-1 drop-shadow-xl">
+                        <li><a class="drop-shadow-xl">Home</a></li>
+                        <li><a class="drop-shadow-xl">About</a></li>
+                        <li><a class="drop-shadow-xl">Destination</a></li>
+                        <li><a class="drop-shadow-xl">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-green-200 drop-shadow-xl"><span class="text-green-500">Bus</span> <span><img
+                                src="images/bus-icon.png" alt=""></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner mt-10 w-[95%] md:w-[81%] mx-auto rounded-2xl font-raleway">
+            <div class="hero min-h-fit md:min-h-screen rounded-2xl bg-cover bg-no-repeat w-full "
+                style="background-image: url(images/banner.png);  background-position: center;">
+                <div class="hero-content text-center text-neutral-content p-4">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl md:text-5xl font-bold text-white font-raleway">End-to-End Travel with <br>
+                           <span class="text-green-400 font-raleway">E Paribahan</span> </h1>
+                        <p class="mb-5 text-white font-raleway">
+                            An e-ticket for a bus ride provides a convenient digital alternative to traditional paper tickets, offering easy access and seamless boarding for passengers on their mobile devices.</p>
+                       <a href="#buyTicket"><button class="btn bg-green-500 border-none"><span class="text-black font-raleway">Buy Tickets</span></button></a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class=" mt-16 md:mt-28 ">
+            <section id="ticket md:w-[81%] mx-auto">
+                <div>
+                    <h1 class=" text-xl md:text-3xl font-bold text-black text-center font-raleway">Best offers for you</h1>
+                </div>
+
+             <div class="flex flex-col md:flex-row justify-center gap-6 mt-11">
+                <div class="bg-[#FFBF0F] w-[320px] md:w-[500px]  flex flex-row rounded-3xl">
+                    <div class="text-center my-auto mx-auto font-inter">
+                      <h1 class="font-extrabold text-2xl md:text-4xl text-black ">15% OFF</h1>
+                      <p class="text-black text-xs md:text-xl ">on your next purchase <br>
+                      <span class="text-gray-400 ">use by January 2024</span></p>
+                    </div>
+                    <div>
+                      <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway my-auto mx-auto">
+                      <h1 class="font-extrabold text-2xl md:text-4xl text-black">NEW15</h1>
+                      <p class=" text-xl">
+                      <span class="text-gray-400 text-xs md:text-xl">Coupon Code</span></p>
+                    </div>
+              </div>
+
+              <div class="bg-[#F78C9C] w-[320px] md:w-[500px]  flex flex-row rounded-3xl">
+                <div class="text-center my-auto mx-auto font-inter">
+                  <h1 class="font-extrabold text-2xl md:text-4xl text-black ">20% OFF</h1>
+                  <p class="text-black text-xs md:text-xl ">on your next purchase <br>
+                  <span class="text-gray-400 ">use by January 2024</span></p>
+                </div>
+                <div>
+                  <img src="images/cupon-devider.png" alt="">
+                </div>
+                <div class="font-raleway my-auto mx-auto">
+                  <h1 class="font-extrabold text-2xl md:text-4xl text-black">Couple 20</h1>
+                  <p class=" text-xl">
+                  <span class="text-gray-400 text-xs md:text-xl">Coupon Code</span></p>
+                </div>
+                    </div>
+             </div>
+
+               <div class="mt-12 flex  justify-center ">
+                <button class="btn btn-wide border-green-500 text-2xl bg-white text-[#1DD100] ">See All Offers</button>
+               </div>
+            </section>
+
+            <section id="buyTicket" class="bg-[#F7F8F8] mt-11 rounded-tr-[80px] rounded-tl-[80px] border-green-500">
+
+
+                <div class="my-10 pt-20">
+                    <h1 class=" text-xl md:text-3xl font-bold text-black text-center font-raleway">E.H Paribahan</h1>
+                    <p class="mb-5 text-gray-400 font-raleway text-center md:w-[736px] md:mx-auto mt-6">
+                        An e-ticket for a bus ride provides a convenient digital alternative to traditional paper tickets,
+                         offering easy access and seamless boarding for passengers on their mobile devices.</p>
+                </div>
+
+
+
+
+                <div class="bg-white w-[320px] md:w-[1170px]  flex flex-col md:flex-row rounded-3xl mx-auto items-center  ">
+                    <div class="text-center  font-inter flex-1 p-3">
+                       <div class="flex flex-row justify-between p-3">
+                        <div class="flex flex-row gap-2">
+                           <div>
+                              <img src="images/bus-logo.png" alt="">
+                           </div>
+                           <div class=" text-center md:text-start">
+                            <h1 class="font-extrabold text-xs md:text-2xl text-black font-raleway">Greenline Paribahan</h1>
+                            <p class=" text-xl">
+                            <span class="text-gray-400 text-[6px] md:text-xl font-raleway">Coach-009-WEB ! AC_Business</span></p> 
+                           </div>
+                        </div>
+                        <div>
+                            <button class="btn bg-green-100 "><span><img src="images/seat-green.png" alt=""></span> <span id="seatRemainig" class="text-green-500" >40</span>  
+                                <span class="text-green-500 text-[7px] md:text-xl" >Seats Left</span> </button>
+                        </div>
+                       </div>
+                         
+                       <div class="bg-[#F7F8F8] rounded-3xl p-9">
+                            <div class="flex flex-row justify-between">
+                                <div>
+                                    <p >
+                                        <span class="text-gray-400 text-xs md:text-xl font-raleway">Route</span></p> 
+                                </div>
+                                <div>
+                                    <p>
+                                        <span class="text-black text-xs md:text-xl font-raleway">Dhaka - Sylhet</span></p> 
+                                </div>
+                               
+                                   
+                            </div>
+                            <div class="border-t border-dashed border-gray-400 w-full my-4"></div>
+                            <div class="flex flex-row justify-between">
+                                <div>
+                                    <p >
+                                        <span class="text-gray-400 text-xs md:text-xl font-raleway">Departure Time</span></p> 
+                                </div>
+                                <div>
+                                    <p>
+                                        <span class="text-black text-xs md:text-xl font-raleway">9:00 PM</span></p> 
+                                </div>
+                               
+                                   
+                            </div>
+
+                            <div class="border-t border-dashed  border-gray-400 w-full  my-4"></div>
+
+                            <div class="flex flex-col md:flex-row gap-3">
+
+                                <button class="btn btn-wide ">Boarding Point - Laxmipur</button>
+                                <button class="btn btn-wide ">Dropping Point - Bogura </button>
+                                <button class="btn btn-wide ">Est. Time - 11 Hour</button>
+                               
+                                   
+                            </div>
+                          
+                       </div>
+
+                    </div>
+                    <div>
+                      <img class=" hidden md:block"  src="images/info-devider.png" alt="">
+                    </div>
+                    <div class="font-raleway my-auto mx-auto text-center pr-6">
+                      <img class="mx-auto" src="images/fare.png" alt="">
+                      <h1 class="font-extrabold text-2xl md:text-4xl text-black font-raleway">550 Taka</h1>
+                      <p class=" text-xl">
+                      <span class="text-gray-400 text-xs md:text-xl font-raleway">Per Seat</span></p>
+                    </div>
+                        </div>
+
+              
+            </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

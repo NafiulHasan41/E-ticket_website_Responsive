@@ -180,4 +180,17 @@ nextBtn.addEventListener("click", function()
     {
         alert("Passenger name field Can not be empy") 
     }
+    else
+    {
+        const md=document.getElementById("my_modal_1");
+
+        md.showModal();
+    }
 })
+
+
+ function closeModal()
+{
+    my_modal_1.close();
+    location.reload();
+}

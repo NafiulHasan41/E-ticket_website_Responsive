@@ -194,3 +194,44 @@ nextBtn.addEventListener("click", function()
     my_modal_1.close();
     location.reload();
 }
+
+
+const cuponButton = document.getElementById("cuponWork11");
+
+cuponButton.addEventListener("click", function(){
+
+    if(maxSeat!==4)
+    {
+        alert("Only User who buy four ticket gets cupon")
+    }
+    else
+    {
+        const cuponButtonInput = document.getElementById("cupId");
+
+        if(cuponButtonInput.value==="NEW15")
+        {
+            const cSeat=document.getElementById("grandtotalpriceshow");
+            var cSeatNumber=parseInt(cSeat.innerText);
+            cSeatNumber=cSeatNumber-((cSeatNumber*15)/100);
+            cSeat.innerText=cSeatNumber;
+           
+            var targetDiv = document.getElementById("CupDiv");
+            targetDiv.classList.add("invisible")
+        }
+        else if(cuponButtonInput.value==="Couple 20")
+        {
+            const cSeat=document.getElementById("grandtotalpriceshow");
+            var cSeatNumber=parseInt(cSeat.innerText);
+            cSeatNumber=cSeatNumber-((cSeatNumber*20)/100);
+            cSeat.innerText=cSeatNumber;
+            
+            var targetDiv = document.getElementById("CupDiv");
+            targetDiv.classList.add("invisible")
+        }
+        else
+        {
+            alert("Invalid Cupon")
+        }
+      
+    }
+})

@@ -212,8 +212,26 @@ cuponButton.addEventListener("click", function(){
         {
             const cSeat=document.getElementById("grandtotalpriceshow");
             var cSeatNumber=parseInt(cSeat.innerText);
+            var ans=((cSeatNumber*15)/100).toString();
             cSeatNumber=cSeatNumber-((cSeatNumber*15)/100);
             cSeat.innerText=cSeatNumber;
+
+
+            var newParagraph = document.createElement("p");
+            var textNode = document.createTextNode("Discounted");
+            newParagraph.appendChild(textNode);
+            newParagraph.classList.add("p-2");
+            var targetDiv = document.getElementById("hh1");
+            targetDiv.appendChild(newParagraph);
+     
+            var newParagraph2 = document.createElement("p");
+            var textNode2 = document.createTextNode(ans);
+            newParagraph2.appendChild(textNode2);
+            newParagraph2.classList.add("p-2");
+            var targetDiv = document.getElementById("hh2");
+            targetDiv.appendChild(newParagraph2);
+
+
            
             var targetDiv = document.getElementById("CupDiv");
             targetDiv.classList.add("invisible")
@@ -222,9 +240,25 @@ cuponButton.addEventListener("click", function(){
         {
             const cSeat=document.getElementById("grandtotalpriceshow");
             var cSeatNumber=parseInt(cSeat.innerText);
+            var ans=((cSeatNumber*20)/100).toString();
             cSeatNumber=cSeatNumber-((cSeatNumber*20)/100);
             cSeat.innerText=cSeatNumber;
-            
+
+
+            var newParagraph = document.createElement("p");
+            var textNode = document.createTextNode("Discounted");
+            newParagraph.appendChild(textNode);
+            newParagraph.classList.add("p-2");
+            var targetDiv = document.getElementById("hh1");
+            targetDiv.appendChild(newParagraph);
+     
+            var newParagraph2 = document.createElement("p");
+            var textNode2 = document.createTextNode(ans);
+            newParagraph2.appendChild(textNode2);
+            newParagraph2.classList.add("p-2");
+            var targetDiv = document.getElementById("hh2");
+            targetDiv.appendChild(newParagraph2);
+
             var targetDiv = document.getElementById("CupDiv");
             targetDiv.classList.add("invisible")
         }
